@@ -4,11 +4,11 @@
 import { Metadata } from "next";
 // import { integrations, messages } from "../../../../integrations.config";
 
-export const metadata: Metadata = {
-  title: "Blog | AI Tool - Next.js Template for AI Tools",
-  description: "This is Blog page for AI Tool",
-  // other metadata
-};
+// export const metadata: Metadata = {
+//   title: "Blog | AI Tool - Next.js Template for AI Tools",
+//   description: "This is Blog page for AI Tool",
+//   // other metadata
+// };
 
 // export default async function BlogPage() {
 //   const posts = integrations.isSanityEnabled ? await getPosts() : [];
