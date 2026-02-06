@@ -1,4 +1,4 @@
-import BlogSection from "@/components/Blog";
+// import BlogSection from "@/components/Blog";
 import CallToAction from "@/components/CallToAction";
 import Clients from "@/components/Home/Clients";
 import Features from "@/components/Home/Features";
@@ -29,7 +29,7 @@ export default function Home() {
       </section>
       <Clients />
       <Support />
-      {integrations.isSanityEnabled && <BlogSection />}
+      {/* {integrations.isSanityEnabled && <BlogSection />} */}
       <CallToAction />
       <Newsletter />
     </>
