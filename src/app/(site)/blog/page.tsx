@@ -1,7 +1,7 @@
 // import BlogGridContainer from "@/components/Blog/BlogGridContainer";
 // import Breadcrumb from "@/components/Breadcrumb";
 // import { getPosts } from "@/sanity/sanity-utils";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 // import { integrations, messages } from "../../../../integrations.config";
 
 // export const metadata: Metadata = {
