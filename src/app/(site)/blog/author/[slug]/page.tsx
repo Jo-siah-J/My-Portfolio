@@ -1,12 +1,12 @@
 // import BlogGridContainer from "@/components/Blog/BlogGridContainer";
-import Breadcrumb from "@/components/Breadcrumb";
-// import { getPostsByAuthor } from "@/sanity/sanity-utils";
-// import { Author } from "@/types/blog";
-import React from "react";
+// import Breadcrumb from "@/components/Breadcrumb";
+// // import { getPostsByAuthor } from "@/sanity/sanity-utils";
+// // import { Author } from "@/types/blog";
+// import React from "react";
 
-type Props = {
-  params: Promise<{ slug: string }>;
-};
+// type Props = {
+//   params: Promise<{ slug: string }>;
+// };
 
 // export async function generateMetadata(props: Props) {
 //   const params = await props.params;
