@@ -1,4 +1,4 @@
-import { getPosts } from "@/sanity/sanity-utils";
+// import { getPosts } from "@/sanity/sanity-utils";
 import { Blog } from "@/types/blog";
 import SectionTitle from "../Common/SectionTitle";
 import SingleBlog from "./SingleBlog";
