@@ -29,10 +29,16 @@ const Hero = () => {
         <div className='grid items-start gap-12 lg:grid-cols-2'>
         
         {/*---Left column text--- */}
-        <div className='text-left'>
+        <div className='place-self-center text-center lg:text-left justify-self-start'>
           
-          <h1 className='xl:text-heading-1 mb-6 text-3xl font-extrabold text-white sm:text-5xl'>
-            Hello, I am Josiah Williams
+          <h1 className='mb-6 text-4xl font-extrabold text-white sm:text-5xl xl:text-heading-1 leading-tight'>
+           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+              Hello, I'm
+              </span>
+            <br />
+            <span className="index-module_type__E-SaG">
+             Josiah Williams
+            </span>
           </h1>
           
           <p className='mx-auto mb-9 max-w-[500px] font-medium md:text-lg'>
