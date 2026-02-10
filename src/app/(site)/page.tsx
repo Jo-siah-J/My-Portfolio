@@ -22,16 +22,16 @@ export default function Home() {
     <>
       <Hero />
       <Features />
-      <FeaturesList />
-      <Pricing />
+      {/* <FeaturesList /> */}
+      {/* <Pricing /> */}
       <section className="relative z-20 overflow-hidden pb-20 pt-22.5 lg:pt-27.5 xl:pt-32.5 2xl:pt-45">
         <Reviews />
       </section>
       <Clients />
-      <Support />
+      {/* <Support /> */}
       {/* {integrations.isSanityEnabled && <BlogSection />} */}
-      <CallToAction />
-      <Newsletter />
+      {/* <CallToAction />
+      <Newsletter /> */}
     </>
   );
 }

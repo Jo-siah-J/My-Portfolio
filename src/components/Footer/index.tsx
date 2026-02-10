@@ -26,14 +26,12 @@ const Footer = () => {
 
           <div className="flex flex-wrap justify-between">
             <div className="mb-10 w-full max-w-[520px]">
-              <Link href="/" className="mb-8.5 inline-block">
+              {/* <Link href="/" className="mb-8.5 inline-block">
                 <Image src={logo} alt="Logo" width={164} height={36} />
-              </Link>
+              </Link> */}
 
               <p className="mb-12 xl:w-4/5">
-                Build SaaS AI applications using OpenAI and Next.js, this kit
-                comes with pre-configured and pre-built examples, making it
-                easier to quickly kickstart your AI startup.
+                I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
               </p>
 
               <div className="flex items-center gap-5">

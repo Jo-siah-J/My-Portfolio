@@ -40,9 +40,12 @@ const Header = () => {
       >
         <div className="relative mx-auto max-w-[1170px] items-center justify-between px-4 sm:px-8 lg:flex xl:px-0">
           <div className="flex w-full items-center justify-between lg:w-1/4">
-            <Link href="/">
-              <Image src={logo} alt="Logo" width={164} height={36} />
-            </Link>
+             <Image
+                src={'/images/logo/Light Logo.PNG'}
+                alt='Logo'
+                width={264} 
+                height={250}
+              />
 
             <button
               onClick={() => setNavigationOpen(!navigationOpen)}
@@ -119,7 +122,7 @@ const Header = () => {
               </ul>
             </nav>
 
-            <div className="mt-7 flex items-center gap-6 lg:mt-0">
+            {/* <div className="mt-7 flex items-center gap-6 lg:mt-0">
               {session ? (
                 <>
                   <p>{session?.user?.name}</p>
@@ -160,7 +163,7 @@ const Header = () => {
                   </Link>
                 </>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       </header>
