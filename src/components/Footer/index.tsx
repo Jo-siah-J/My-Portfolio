@@ -102,20 +102,30 @@ const Footer = () => {
                   </svg>
                 </a>
               </div>
-
-              <p className="mt-5.5 font-medium">
-                AI Tool, LLC. All rights reserved.
-              </p>
+            
+            
             </div>
 
-            <div className="w-full max-w-[571px]">
+            <div className="w-full items-left lg:visible lg:flex lg:h-auto lg:w-3/4">
               <div className="flex flex-col gap-10 sm:flex-row sm:justify-between">
-                <FooterLinkList title="Products" links={productsLink} />
+                {/* <FooterLinkList title="Products" links={productsLink} />
 
                 <FooterLinkList title="Company" links={companiesLink} />
 
-                <FooterLinkList title="Support" links={supportsLink} />
-              </div>
+                <FooterLinkList title="Support" links={supportsLink} /> */}
+                <Image
+                  src={'/images/logo/Light Logo.PNG'}
+                  alt='Logo'
+                  width={264} 
+                  height={250}
+                />    
+            </div>
+            </div>
+
+              <div className="text-right">
+              <p className="mt-5.5 font-medium">
+                All rights reserved.
+              </p>
             </div>
           </div>
         </div>
