@@ -1,8 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import logo from "../../../public/images/logo/logo.svg";
-import FooterLinkList from "./FooterLinkList";
-import { companiesLink, productsLink, supportsLink } from "./linksData";
 
 const Footer = () => {
   return (
@@ -24,16 +20,21 @@ const Footer = () => {
         <div className="relative mx-auto max-w-[1170px] px-4 pt-17.5 sm:px-8 xl:px-0">
           <div className="footer-divider-gradient absolute left-0 top-0 h-[1px] w-full"></div>
 
-          <div className="flex flex-wrap justify-between">
-            <div className="mb-10 w-full max-w-[520px]">
-              {/* <Link href="/" className="mb-8.5 inline-block">
-                <Image src={logo} alt="Logo" width={164} height={36} />
-              </Link> */}
+          {/* TOP ROW: left text/socials + right subscribe */}
+          <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
+            {/* LEFT */}
+            <div className="w-full lg:max-w-[520px]">
+              <h3 className="mb-2 text-heading-5 font-semibold text-white">
+                Let's Connect
+              </h3>
 
-              <p className="mb-12 xl:w-4/5">
-                I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+              <p className="mb-8 xl:w-4/5">
+                I'm currently looking for new opportunities, my inbox is always
+                open. Whether you have a question or just want to say hi, I'll
+                try my best to get back to you!
               </p>
 
+              {/* Socials */}
               <div className="flex items-center gap-5">
                 <a
                   href="#"
@@ -102,30 +103,42 @@ const Footer = () => {
                   </svg>
                 </a>
               </div>
-            
-            
             </div>
 
-            <div className="w-full items-left lg:visible lg:flex lg:h-auto lg:w-3/4">
-              <div className="flex flex-col gap-10 sm:flex-row sm:justify-between">
-                {/* <FooterLinkList title="Products" links={productsLink} />
-
-                <FooterLinkList title="Company" links={companiesLink} />
-
-                <FooterLinkList title="Support" links={supportsLink} /> */}
-                <Image
-                  src={'/images/logo/Light Logo.PNG'}
-                  alt='Logo'
-                  width={264} 
-                  height={250}
-                />    
+            {/* RIGHT: Subscribe */}
+            <div className="w-full lg:max-w-[534px] lg:self-start">
+              <form>
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                  <div className="w-full sm:max-w-[395px]">
+                    <input
+                      id="newsletterEmail"
+                      type="email"
+                      name="newsletterEmail"
+                      placeholder="Enter your Email"
+                      className="w-full rounded-lg border border-white/[0.12] bg-white/[0.05] px-6 py-3 text-white outline-hidden focus:border-purple"
+                    />
+                  </div>
+                  <button className="button-border-gradient hover:button-gradient-hover relative flex items-center gap-1.5 rounded-lg px-7 py-3.5 text-sm text-white shadow-button hover:shadow-none">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
             </div>
+          </div>
+
+          {/* LOWER ROW: logo + rights */}
+          <div className="mt-12 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+            <div className="w-full lg:w-auto">
+              <Image
+                src={"/images/logo/Light Logo.PNG"}
+                alt="Logo"
+                width={264}
+                height={250}
+              />
             </div>
 
-              <div className="text-right">
-              <p className="mt-5.5 font-medium">
-                All rights reserved.
-              </p>
+            <div className="text-right">
+              <p className="mt-0 font-medium">All rights reserved.</p>
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ const Video = () => {
 
   return (
     <section className="pt-12">
-      <div className="mx-auto max-w-[1170px] px-4 sm:px-8 xl:px-0">
+      {/* <div className="mx-auto max-w-[1170px] px-4 sm:px-8 xl:px-0">
         <div className="relative z-999 aspect-39/20 rounded-3xl">
           <button
             aria-label="video play button"
@@ -32,7 +32,7 @@ const Video = () => {
 
           <Image src="/images/video/video.png" fill alt="video" />
         </div>
-      </div>
+      </div> */}
 
       <FsLightbox
         toggler={toggler}

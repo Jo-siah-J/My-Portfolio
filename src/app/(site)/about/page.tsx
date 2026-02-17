@@ -20,14 +20,14 @@ const AboutPage = () => {
     <>
       <Breadcrumb pageTitle="About Page" />
       <AboutSection />
-      <Features />
-      <Video />
-      <Team />
-      <section className="relative z-20 overflow-hidden pb-20">
+      {/* <Features /> */}
+      {/* <Video />
+      <Team /> */}
+      {/* <section className="relative z-20 overflow-hidden pb-20">
         <Reviews />
-      </section>
-      <Clients />
-      <CallToAction />
+      </section> */}
+      {/* <Clients /> */}
+      {/* <CallToAction /> */}
       <Newsletter />
     </>
   );

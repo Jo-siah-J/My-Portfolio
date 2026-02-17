@@ -13,7 +13,7 @@ const AboutSection = () => {
             </span>
 
             <p className="mb-9 font-medium">
-              👋 Hi, I’m Josiah Williams — a U.S. Navy professional transitioning into full-stack web development and cybersecurity, with a focus on building clean, scalable, and reliable systems.
+              👋 Hi, I’m Josiah Williams — a U.S. Navy professional pivoting into full-stack web development and cybersecurity, with a focus on building clean, scalable, and reliable systems.
               <br />
               <br />
               My background comes from high-accountability operational environments where precision, discipline, and execution matter. I’ve led teams, managed complex workflows, and operated in settings where mistakes are not theoretical. That mindset directly shapes how I approach software development: structured thinking, attention to detail, and solutions that actually hold up under pressure.
@@ -31,17 +31,17 @@ const AboutSection = () => {
               🎯 Whether it’s building a web application, improving a workflow, or designing systems with security in mind, I focus on execution, growth, and long-term impact.
             </p>
 
-            <a
+            {/* <a
               href="#"
               className="hero-button-gradient inline-flex rounded-lg px-7 py-3 font-medium text-white duration-300 ease-in hover:opacity-80"
             >
               Start Writing - It{`'`}s Free
-            </a>
+            </a> */}
           </div>
 
-          <div className="wow fadeInRight relative hidden aspect-556/401 w-full xl:block">
+          {/* <div className="wow fadeInRight relative hidden aspect-556/401 w-full xl:block">
             <Image src="/images/about/about.svg" alt="about" fill />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
