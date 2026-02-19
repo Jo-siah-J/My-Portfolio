@@ -11,7 +11,13 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           }`}
         ></span>
         <span className="icon-border relative mx-auto mb-8 inline-flex h-20 w-full max-w-[80px] items-center justify-center rounded-full">
-          <Image src={feature.icon} alt="icon" width={32} height={32} />
+          <Image
+            src={feature.icon}
+            alt={feature.title}
+            width={260}
+            height={260}
+            className="object-contain w-56 sm:w-64 md:w-72 transition-transform duration-300 group-hover:scale-105"
+          />
         </span>
         <h3 className="mb-4 text-lg font-semibold text-white">
           {feature.title}
