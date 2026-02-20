@@ -4,141 +4,130 @@ const Footer = () => {
   return (
     <>
       <footer className="relative z-10 pb-17.5 lg:pb-22.5 xl:pb-27.5">
-        {/* <!-- bg shapes --> */}
+        {/* Background gradient lines */}
         <div className="absolute bottom-0 left-0 -z-1 flex w-full flex-col gap-3 opacity-50">
-          <div className="footer-bg-gradient h-[1.24px] w-full"></div>
-          <div className="footer-bg-gradient h-[2.47px] w-full"></div>
-          <div className="footer-bg-gradient h-[3.71px] w-full"></div>
-          <div className="footer-bg-gradient h-[4.99px] w-full"></div>
-          <div className="footer-bg-gradient h-[6.19px] w-full"></div>
-          <div className="footer-bg-gradient h-[7.42px] w-full"></div>
-          <div className="footer-bg-gradient h-[8.66px] w-full"></div>
-          <div className="footer-bg-gradient h-[9.90px] w-full"></div>
-          <div className="footer-bg-gradient h-[13px] w-full"></div>
+          {[1.24, 2.47, 3.71, 4.99, 6.19, 7.42, 8.66, 9.9, 13].map(
+            (height, i) => (
+              <div
+                key={i}
+                className="footer-bg-gradient w-full"
+                style={{ height: `${height}px` }}
+              />
+            )
+          )}
         </div>
 
         <div className="relative mx-auto max-w-[1170px] px-4 pt-17.5 sm:px-8 xl:px-0">
           <div className="footer-divider-gradient absolute left-0 top-0 h-[1px] w-full"></div>
 
-          {/* TOP ROW: left text/socials + right subscribe */}
-          <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
-            {/* LEFT */}
+          {/* TOP SECTION */}
+          <div className="flex flex-col gap-12 lg:flex-row lg:justify-between">
+            {/* LEFT SIDE */}
             <div className="w-full lg:max-w-[520px]">
               <h3 className="mb-2 text-heading-5 font-semibold text-white">
                 Let's Connect
               </h3>
 
               <p className="mb-8 xl:w-4/5">
-                I'm currently looking for new opportunities, my inbox is always
-                open. Whether you have a question or just want to say hi, I'll
-                try my best to get back to you!
+                I'm currently looking for new opportunities. Whether you have a
+                question, collaboration idea, or opportunity let's connect!
               </p>
 
-              {/* Socials */}
-              <div className="flex items-center gap-5">
-                <a
-                  href="#"
-                  aria-label="facebook"
-                  className="duration-300 ease-in hover:text-white"
-                >
-                  <svg
-                    className="fill-current"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13 21.9506C18.0533 21.4489 22 17.1853 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 16.8379 5.43552 20.8734 10 21.8V16H7V13H10V9.79586C10 7.47449 11.9695 5.64064 14.285 5.80603L17 5.99996V8.99996H15C13.8954 8.99996 13 9.89539 13 11V13H17L16 16H13V21.9506Z"
-                      fill=""
-                    />
-                  </svg>
-                </a>
+              {/* SOCIALS */}
+               <div className="flex items-center gap-5 text-white/70">
+  {/* GitHub */}
+  <a
+    href="https://github.com/YOUR_USERNAME"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+    className="transition hover:text-white"
+  >
+    <svg
+      className="fill-current"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+    >
+      <path d="M12 0.5C5.65 0.5 0.5 5.65 0.5 12C0.5 17.1 3.85 21.45 8.45 23C9.05 23.1 9.25 22.75 9.25 22.5C9.25 22.25 9.25 21.5 9.2 20.6C5.95 21.3 5.3 19.1 5.3 19.1C4.8 17.8 4.05 17.5 4.05 17.5C3 16.75 4.15 16.75 4.15 16.75C5.3 16.85 5.95 17.95 5.95 17.95C6.95 19.65 8.55 19.15 9.25 18.85C9.35 18.1 9.65 17.6 10 17.3C7.45 17 4.75 16 4.75 11.6C4.75 10.35 5.2 9.35 5.95 8.6C5.85 8.3 5.45 7.1 6.05 5.5C6.05 5.5 7.05 5.2 9.25 6.7C10.15 6.45 11.1 6.35 12.05 6.35C13 6.35 13.95 6.45 14.85 6.7C17.05 5.2 18.05 5.5 18.05 5.5C18.65 7.1 18.25 8.3 18.15 8.6C18.9 9.35 19.35 10.35 19.35 11.6C19.35 16 16.65 17 14.1 17.3C14.55 17.7 14.95 18.5 14.95 19.7C14.95 21.35 14.95 22.2 14.95 22.5C14.95 22.75 15.15 23.1 15.75 23C20.35 21.45 23.5 17.1 23.5 12C23.5 5.65 18.35 0.5 12 0.5Z" />
+    </svg>
+  </a>
 
-                <a
-                  href="#"
-                  aria-label="twitter"
-                  className="duration-300 ease-in hover:text-white"
-                >
-                  <svg
-                    className="fill-current"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.6125 21.5251C16.4625 21.5251 21.2625 14.2126 21.2625 7.87509C21.2625 7.72509 21.2625 7.46259 21.225 7.23759C22.1625 6.56259 22.9875 5.70009 23.625 4.76259C22.725 5.17509 21.825 5.40009 20.8875 5.51259C21.9 4.91259 22.65 3.97509 22.9875 2.8501C22.05 3.3751 21.075 3.78759 19.9125 4.01259C19.0125 3.0751 17.8125 2.4751 16.425 2.4751C13.7625 2.4751 11.5875 4.65009 11.5875 7.31259C11.5875 7.68759 11.625 8.06259 11.7 8.43759C7.8375 8.17509 4.3125 6.26259 1.9125 3.3751C1.5 4.12509 1.275 4.91259 1.275 5.77509C1.275 7.46259 2.1375 8.88759 3.45 9.75009C2.6625 9.71259 1.9125 9.48759 1.275 9.15009C1.275 9.18759 1.275 9.18759 1.275 9.18759C1.275 11.4751 2.925 13.4626 5.1 13.9126C4.6875 14.0251 4.2375 14.0626 3.9 14.0626C3.6 14.0626 3.2625 14.0251 3 13.9501C3.6375 15.8626 5.4 17.2501 7.5 17.2876C5.85 18.5626 3.7875 19.3501 1.575 19.3501C1.125 19.4251 0.75 19.3501 0.375 19.3126C2.4 20.7376 4.9125 21.5251 7.6125 21.5251Z"
-                      fill=""
-                    />
-                  </svg>
-                </a>
-
-                <a
-                  href="#"
-                  aria-label="github"
-                  className="duration-300 ease-in hover:text-white"
-                >
-                  <svg
-                    className="fill-current"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_368_11839)">
-                      <path
-                        d="M12 0.674805C5.625 0.674805 0.375 5.8498 0.375 12.2998C0.375 17.3998 3.7125 21.7498 8.3625 23.3248C8.9625 23.4373 9.15 23.0623 9.15 22.7998C9.15 22.5373 9.15 21.7873 9.1125 20.7748C5.8875 21.5248 5.2125 19.1998 5.2125 19.1998C4.6875 17.8873 3.9 17.5123 3.9 17.5123C2.85 16.7623 3.9375 16.7623 3.9375 16.7623C5.1 16.7998 5.7375 17.9623 5.7375 17.9623C6.75 19.7623 8.475 19.2373 9.1125 18.8998C9.225 18.1498 9.525 17.6248 9.8625 17.3248C7.3125 17.0623 4.575 16.0498 4.575 11.6248C4.575 10.3498 5.0625 9.3373 5.775 8.5498C5.6625 8.2873 5.25 7.0873 5.8875 5.4748C5.8875 5.4748 6.9 5.1748 9.1125 6.6748C10.05 6.4123 11.025 6.2623 12.0375 6.2623C13.05 6.2623 14.0625 6.3748 14.9625 6.6748C17.175 5.2123 18.15 5.4748 18.15 5.4748C18.7875 7.0498 18.4125 8.2873 18.2625 8.5498C19.0125 9.3373 19.4625 10.3873 19.4625 11.6248C19.4625 16.0498 16.725 17.0623 14.175 17.3248C14.5875 17.6998 14.9625 18.4498 14.9625 19.4998C14.9625 21.0748 14.925 22.3123 14.925 22.6873C14.925 22.9873 15.15 23.3248 15.7125 23.2123C20.2875 21.6748 23.625 17.3623 23.625 12.2248C23.5875 5.8498 18.375 0.674805 12 0.674805Z"
-                        fill=""
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_368_11839">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </a>
-              </div>
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/YOUR_USERNAME"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+    className="transition hover:text-white"
+  >
+    <svg
+      className="fill-current"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+    >
+      <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6C1.11 6 0 4.88 0 3.5C0 2.12 1.11 1 2.49 1C3.87 1 4.98 2.12 4.98 3.5ZM0.24 8.25H4.74V24H0.24V8.25ZM8.4 8.25H12.72V10.41H12.78C13.38 9.27 14.88 8.07 17.04 8.07C21.54 8.07 22.38 11.01 22.38 14.85V24H17.88V15.75C17.88 13.8 17.85 11.28 15.18 11.28C12.48 11.28 12.06 13.38 12.06 15.6V24H8.4V8.25Z" />
+    </svg>
+  </a>
+               </div>
             </div>
 
-            {/* RIGHT: Subscribe */}
-            <div className="w-full lg:max-w-[534px] lg:self-start">
-              <form>
-                <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-                  <div className="w-full sm:max-w-[395px]">
-                    <input
-                      id="newsletterEmail"
-                      type="email"
-                      name="newsletterEmail"
-                      placeholder="Enter your Email"
-                      className="w-full rounded-lg border border-white/[0.12] bg-white/[0.05] px-6 py-3 text-white outline-hidden focus:border-purple"
-                    />
-                  </div>
-                  <button className="button-border-gradient hover:button-gradient-hover relative flex items-center gap-1.5 rounded-lg px-7 py-3.5 text-sm text-white shadow-button hover:shadow-none">
-                    Subscribe
-                  </button>
+            {/* RIGHT SIDE — CONTACT FORM */}
+            <div className="w-full lg:max-w-[600px]">
+              <form className="flex flex-col gap-6">
+                <div className="flex flex-col gap-6 sm:flex-row">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    className="w-full rounded-lg border border-white/[0.12] bg-white/[0.05] px-6 py-3 text-white outline-none focus:border-purple"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    className="w-full rounded-lg border border-white/[0.12] bg-white/[0.05] px-6 py-3 text-white outline-none focus:border-purple"
+                  />
                 </div>
+
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  className="w-full rounded-lg border border-white/[0.12] bg-white/[0.05] px-6 py-3 text-white outline-none focus:border-purple"
+                />
+
+                <textarea
+                  name="message"
+                  rows={5}
+                  placeholder="Your Message"
+                  className="w-full resize-none rounded-lg border border-white/[0.12] bg-white/[0.05] px-6 py-4 text-white outline-none focus:border-purple"
+                ></textarea>
+
+                <button
+                  type="submit"
+                  className="button-border-gradient hover:button-gradient-hover relative flex items-center justify-center rounded-lg px-8 py-3.5 text-sm font-medium text-white shadow-button transition hover:shadow-none"
+                >
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
 
-          {/* LOWER ROW: logo + rights */}
-          <div className="mt-12 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-            <div className="w-full lg:w-auto">
+          {/* LOWER SECTION */}
+          <div className="mt-16 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+            <div>
               <Image
                 src={"/images/logo/Light Logo.PNG"}
                 alt="Logo"
-                width={264}
-                height={250}
+                width={220}
+                height={200}
               />
             </div>
 
             <div className="text-right">
-              <p className="mt-0 font-medium">All rights reserved.</p>
+              <p className="font-medium">All rights reserved.</p>
             </div>
           </div>
         </div>
