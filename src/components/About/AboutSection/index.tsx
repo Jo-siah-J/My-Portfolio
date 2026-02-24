@@ -39,9 +39,16 @@ const AboutSection = () => {
             </a> */}
           </div>
 
-          {/* <div className="wow fadeInRight relative hidden aspect-556/401 w-full xl:block">
-            <Image src="/images/about/about.svg" alt="about" fill />
-          </div> */}
+          <div className="w-full max-w-[556px]">
+            <Image
+              src="/images/about/about2.png"
+              alt="About Josiah"
+              width={556}
+              height={401}
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>
