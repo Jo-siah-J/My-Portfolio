@@ -29,6 +29,14 @@ const featuresData: Feature[] = [
     icon: "/images/features/reactjs.svg",
     rotate: true,
   },
+  {
+    id: 5,
+    title: "Next.js Developer",
+    description:
+      "The Next.js Developer Certification validates your ability to build high-performance, SEO-friendly full-stack web applications using the Next.js framework. It demonstrates proficiency in Server-Side Rendering (SSR), Static Site Generation (SSG), Incremental Static Regeneration (ISR), and the App Router architecture. Certified developers are skilled in optimizing core web vitals, implementing API Routes, and managing complex data fetching patterns and middleware. This certification positions you for roles in Full-Stack Engineering, Performance Optimization, and Enterprise Web Development.",
+    icon: "/images/features/nextjs.svg",
+    rotate: true,
+  },
   // {
   //   id: 5,
   //   title: "Pre-made AI Examples",

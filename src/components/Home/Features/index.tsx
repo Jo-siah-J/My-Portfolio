@@ -9,11 +9,11 @@ const Features = () => {
       className="scroll-mt-17 overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5"
     >
       <div className="mx-auto max-w-[1222px] px-4 sm:px-8 xl:px-0">
-        <SectionTitle
+        {/* <SectionTitle
           subTitle="Main Features"
           title="Key Features of AI Tool"
           paragraph="A Complete Solution for AI SaaS Startups"
-        />
+        /> */}
 
         <div className="relative">
           <div className="features-row-border absolute left-1/2 top-1/2 hidden h-[1px] w-1/2 -translate-y-1/2 rotate-90 lg:left-1/4 lg:block lg:-translate-x-1/3"></div>

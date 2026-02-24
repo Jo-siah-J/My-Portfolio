@@ -19,12 +19,13 @@ const menuData: Menu[] = [
   //   newTab: false,
   //   path: "/blog",
   // },
-  {
-    id: 3,
-    title: "Docs",
-    newTab: false,
-    path: "/docs",
-  },
+ // -----------EVENTUALLY Docs WILL BE MY RESUME PAGE------
+  // {
+  //   id: 3,
+  //   title: "Docs",
+  //   newTab: false,
+  //   path: "/docs",
+  // },
   // {
   //   id: 5,
   //   title: "Pages",

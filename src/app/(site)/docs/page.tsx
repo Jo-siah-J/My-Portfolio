@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "This is Docs page for AI Tool",
   // other metadata
 };
-
+// -----------EVENTUALLY WILL BE MY RESUME PAGE------
 export default function DocsPage() {
   return (
     <article>
