@@ -46,7 +46,7 @@ const CallToAction = () => {
           <div className="wow fadeInUp text-center">
             <span className="hero-subtitle-gradient relative mb-4 inline-flex items-center gap-2 rounded-full px-4.5 py-2 text-sm font-medium">
               <Image
-                src="/images/hero/icon-title.svg"
+                src="/images/hero/jw-title.png"
                 alt="icon"
                 width={17}
                 height={16}

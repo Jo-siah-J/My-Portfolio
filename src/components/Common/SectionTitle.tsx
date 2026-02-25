@@ -12,7 +12,7 @@ const SectionTitle = ({
   subTitle,
   title,
   paragraph,
-  icon = "/images/hero/icon-title.svg",
+  icon = "/images/hero/jw-title.png",
 }: propsType) => {
   return (
     <div className="wow fadeInUp relative z-10 mb-16 text-center">
