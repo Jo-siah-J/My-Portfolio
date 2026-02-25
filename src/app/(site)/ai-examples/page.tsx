@@ -53,7 +53,7 @@ const AiToolPage = () => {
           <div className="aiExamples-border-gredient relative flex flex-col items-center justify-center rounded-lg bg-white/[0.05] p-4 md:justify-between lg:flex-row lg:px-6 lg:py-2">
             <p className="text-center md:text-left">
               <Image
-                src={"/images/ai-tools/icon-1.svg"}
+                src={"/images/features/jw-title.png"}
                 width={20}
                 height={20}
                 alt="icon"
