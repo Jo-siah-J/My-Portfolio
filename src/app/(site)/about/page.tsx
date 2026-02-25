@@ -10,8 +10,8 @@ import Newsletter from "@/components/Newsletter";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | AI Tool - Next.js Template for AI Tools",
-  description: "This is About page for AI Tool",
+  title: "About | Josiah Williams",
+  description: "This page is About Me",
   // other metadata
 };
 

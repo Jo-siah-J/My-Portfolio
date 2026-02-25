@@ -16,7 +16,7 @@ const FeaturesList = () => {
                     <div className="w-full max-w-[477px]">
                       <span className="hero-subtitle-gradient relative mb-4 inline-flex items-center gap-2 rounded-full px-4.5 py-2 text-sm font-medium">
                         <Image
-                          src="/images/hero/icon-title.svg"
+                          src="/images/hero/jw-title.png"
                           alt="icon"
                           width={16}
                           height={16}
