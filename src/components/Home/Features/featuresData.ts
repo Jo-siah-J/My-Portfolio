@@ -12,7 +12,7 @@ const featuresData: Feature[] = [
     id: 2,
     title: "JavaScript",
     description: "The JavaScript Professional Developer Certification validates your ability to build dynamic, interactive applications with modern JavaScript. It demonstrates competency in core programming concepts, DOM manipulation, event handling, and API integration, skills used across front-end, back-end, and full-stack development. This certification strengthens your profile for software developer, web engineer, and application developer roles.",
-    icon: "/images/features/JavaScript.svg",
+    icon: "/images/features/javascript.svg",
   },
   {
     id: 3,
